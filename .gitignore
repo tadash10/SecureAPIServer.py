@@ -1,0 +1,11 @@
+# Virtual environment
+venv/
+
+# Logs
+api.log
+
+# Compiled Python files
+*.pyc
+
+# Dependency folders
+__pycache__/
