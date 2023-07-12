@@ -1,0 +1,34 @@
+Here's a textual representation of the architectural diagram:  
+  +------------------------+
+|                        |
+|      Secure API        |
+|       Server           |
+|                        |
++------------------------+
+             |
+             |
+             | HTTPS/TLS
+             |
+             V
++------------------------+
+|                        |
+|        Reverse         |
+|         Proxy          |
+|                        |
++------------------------+
+             |
+             | HTTP
+             |
+             V
++------------------------+
+|                        |
+|        Clients         |
+|                        |
++------------------------+
+In this diagram:
+
+    The "Secure API Server" represents the main component of the system, running the Flask application that implements the API server logic.
+    The "Reverse Proxy" is an optional component that can sit between the API server and the clients. It can handle SSL/TLS termination and load balancing.
+    The "Clients" represent the users or applications that interact with the API server by making HTTP requests.
+
+Please note that this is a simplified representation, and the actual architectural diagram for your project may include more components, such as databases, external services, or additional layers.
